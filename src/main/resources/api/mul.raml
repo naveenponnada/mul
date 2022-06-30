@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: mul
+version: v1
+protocols:
+  - HTTP
+/mul:
+  get:
+    queryParameters:
+      number1:
+        type: integer
+      number2:
+        type: integer
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "result": "the result is"
+              }
